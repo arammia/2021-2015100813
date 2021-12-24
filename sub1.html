@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서브페이지1</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+
+<!-- 메인 내비게이션 -->
+<header>
+  <div class="first">
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="./image/logo10.png" width="250px" height="115px" alt="logo"></a>
+      </div>
+
+
+      <ul class="nav">
+        <li><a href="javascript:()" onclick="showpopup();">구독</a></li>
+        <li><a href="./sub2.html">함께 극복하기</a></li>
+        <li><a style="color: #F07B3F;" href="./sub1.html">자가진단 예방</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<body>
+  <div id="sub1_blank"></div>
+
+  <!-- 메인 배너 -->
+
+  <div class="sub1_ban">
+
+    <div id="sub1_bantext">
+      <span class="sub1_banner">
+        <h1>번아웃 자가진단표</h1>
+      </span>
+
+      <span id="me2" class="sub1_banner">
+        <h4>나도 번아웃 증후군은 아닐까?</h4>
+      </span>
+    </div>
+
+    <img class="sub1_banner" src="./image/sub1_banner3.jpg" alt="sub1_banner">
+
+  </div>
+
+
+
+
+
+
+
+  <div class="checklist">
+    <img id="checklist_img" src="./image/checklist3.jpg" alt="checklist">
+  </div>
+
+
+
+
+  <!-- 메인 상세 페이지 -->
+  <div class="sub1_spec">
+
+    <div class="top3">
+      <img src="./image/top3.jpg" alt="top3">
+    </div>
+
+
+
+    <div class="sub1_main">
+      <img style="opacity: 0.7;" src="image/sub01_1g.png" width="620px" height="708px" alt="sub1pic1">
+      <article class="sub1_left">
+
+        <h1 style="margin-bottom: -20px;" class="subtitle">1</h1>
+        <h3 class="subt2">과도한 희생과 부족한 보상</h3>
+        <p class="text">
+          과중한 업무와 노력에 비해<br> 적은 보상 등 직장에서 요구되는 과도한 희생과는 반대로,<br><br> 승진이나
+          금전적 보상이 체계적이지 않을 경우 번아웃 증후군이 생기기 쉽습니다.
+        </p>
+
+      </article>
+
+
+      <div style="margin-top: -500px;">
+        <article class="sub1_right">
+
+          <h1 style="margin-bottom: -20px;" class="subtitle">2</h1>
+          <h3 class="subt2">높은 기대치로 인한<br> 성과의 만족도 저하</h3>
+
+          <p class="text">
+            번아웃 증후군은 목표를 높게<br> 잡고 전력질주 하는 사람에게<br> 주로 나타납니다.<br><br>
+            자기비판적이고 목표지향적인 성향을 가진 이들은<br> 자신의 성과에 대한 만족도가<br> 떨어져 번아웃에 더 취약한<br> 경향을 보이며,<br><br>
+            따라서 오히려 유능하고 건강해 보이는 이들이 더 큰 위험에<br> 노출됩니다.
+          </p>
+
+
+          <img id="imgright" src="./image/sub01_2a.png" width="620px" height="708px" alt="sub1pic2">
+        </article>
+      </div>
+
+      <div style="margin-top: -300px;">
+        <img src="./image/sub01_3b.png" width="620px" height="708px" alt="sub1pic3">
+        <article class="sub1_left">
+
+          <h1 style="margin-bottom: -20px;" class="subtitle">3</h1>
+          <h3 class="subt2">회사 생활과<br> 개인 생활의 불균형</h3>
+
+          <p class="text">
+            긴 노동시간에 비해 짧은 휴식과 생존을 위한 과열된 경쟁 등,<br><br> 개인의 생활을 위협할 정도로<br> 균형을 잃어버린 근무 환경은<br>
+            제대로 된 휴식과 수면을 방해하여 육체적, 정신적으로 극심한 피로를 유발하게 됩니다.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div style="margin-top: -400px;" class="below">
+    <!-- 메인 하단 아이콘 -->
+
+    <div class="stages">
+      <img src="./image/stages3.jpg" alt="stages">
+    </div>
+
+
+
+    <!-- 하단 경계선 -->
+    <div class="line">
+
+    </div>
+
+    <footer>
+      <p class="madeby">® Made by Aram Lee from Web Media Design, 2021</p>
+    </footer>
+  </div>
+
+
+
+
+
+  <!-- begin popup -->
+
+  <div class="popup" id="popup">
+    <div class="blanket"></div>
+    <div class="content">
+      <h2>UBR의 뉴스레터를 구독해보세요.</h2>
+      <form action="">
+        <div class="row">
+          <div class="item">
+            <input type="text" placeholder="이름">
+          </div>
+          <div class="item">
+            <input type="text" placeholder="이메일 주소 입력">
+          </div>
+        </div>
+        <button class="signup" onclick="hidePopup();">구독하기</button>
+        <button class="close" onclick="hidePopup();"></button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="./script.js" type="text/javascript"></script>
+
+</body>
+
+
+</html>
